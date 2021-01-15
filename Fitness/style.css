@@ -1,0 +1,1568 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+.hero {
+  min-height: 100vh;
+  position: relative;
+}
+.hero-img {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+header {
+  padding: 3rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ulcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+.logo-ul {
+  list-style: none;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  font-size: 3rem;
+  color: white;
+}
+header span {
+  color: orangered;
+}
+.logo-ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+.logo-ul a:hover{
+  color: rgba(245, 238, 238, 0.7);
+}
+.ulcontainer h1{
+  display: none;
+}
+.sign-ol {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  list-style: none;
+}
+.sign {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+.sign:hover{
+  color: rgba(245, 238, 238, 0.7);
+}
+.choose-plan {
+  padding: 1.3rem 1.7rem;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: white;
+  border-radius: 1px;
+  border: 2px solid orangered;
+  cursor: pointer;
+}
+.choose-plan:hover {
+  background: orangered;
+  box-shadow: 2px 0px 2px 2px orangered;
+}
+.main-title {
+  min-height: 60vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20rem;
+  margin-top: 5rem;
+}
+.main-title h2 {
+  font-size: 7rem;
+  color: white;
+}
+.main-title span {
+  color: orangered;
+  margin-bottom: 5rem;
+}
+.main-title p {
+  font-size: 2rem;
+  color: rgb(199, 199, 182);
+}
+.book-btn {
+  color: white;
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  background: none;
+  border: 2px solid orangered;
+  padding: 1.2rem 2.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.book-btn:hover {
+  background: orangered;
+  box-shadow: 2px 0px 2px 2px orangered;
+}
+.free-div{
+  position: absolute;
+  width: 70%;
+  min-height: 60vh;
+  display: flex;
+  bottom: -20%;
+  left: 50%;
+  background: white;
+  transform: translateX(-50%) translateY(20%);
+}
+.free-div img{
+  object-fit: cover;
+}
+.free-text{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.free-text h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.free-text h2{
+  margin-bottom: 5rem;
+  font-size: 5rem;
+}
+.booking-form{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.first-form{
+  margin: 2rem 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.select{
+position: relative;
+}
+#count,#date,#time{
+  padding: 0.5rem 1.3rem;
+  border: 0;
+  border-bottom: 2px solid rgba(0,0,0,0.3);
+  color: gray;
+  cursor: pointer;
+ width: 15rem;
+}
+#count{
+  font-size: 1.4rem;
+  padding: 0.5rem 2rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.fa-chevron-down{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.9rem 0.3rem;
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+.date-ic{
+  position: relative;
+}
+.fa-calendar-alt{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 0.2rem;
+  font-size: 1.7rem;
+  pointer-events: none;
+}
+.time-ic{
+  position: relative;
+}
+.fa-clock{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.7rem 0.2rem;
+  font-size: 1.5rem;
+  pointer-events: none;
+}
+.second-form{
+  margin: 2rem auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+#name,#email,#phone{
+  padding: 0.5rem 1.3rem;
+  margin: 0rem 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  width: 15rem;
+}
+.bo2{
+  color: black;
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  background: none;
+  border: 2px solid orangered;
+  padding: 1.2rem 2.3rem;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.bo2:hover{
+  background: orangered;
+  color: white;
+}
+
+/* booking-section */
+
+.booking{
+  padding-top: 40rem;
+  padding-bottom: 2rem;
+  background: rgb(233, 233, 236, 0.9);
+  min-height: 90vh;
+}
+.booking-container{
+  width: 95%;
+  margin: 10rem  auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.booking-text{
+  margin-bottom: auto;
+  margin-top: 11rem;
+  margin-left: 10rem;
+  width: 50%;
+}
+.booking-text h2{
+  font-size: 5rem;
+  margin-bottom: 5rem;
+}
+.booking-text span{
+  color: chocolate;
+}
+.booking-text h3{
+  font-size: 2.5rem;
+  padding-right: 15rem;
+  margin-bottom: 6rem;
+  line-height: 3rem;
+}
+.booking-text p{
+  font-size: 1.5rem;
+  color: gray;
+  margin-bottom: 5rem;
+}
+.in-touch-btn{
+  color: white;
+  margin-top: 3rem;
+  font-size: 1.7rem;
+  padding: 1.2rem 2.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+  background: none;
+  border: 2px solid orangered;
+  color: black;
+  margin-bottom: 2rem;
+}
+.in-touch-btn:hover{
+  box-shadow: 1px 0px 1px 3px orangered ;
+}
+.booking-img{
+  width: 50%;
+}
+.booking-img img{
+width: 90%;
+height: 90%;
+margin: 1rem;
+}
+
+/* categoris section */
+
+.categoris{
+  min-height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10rem;
+  padding-bottom: 5rem;
+}
+.categoris-text{
+  margin: 3rem 0rem;
+  padding-top: 5rem;
+}
+.categoris-text h2{
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.categoris-text span{
+  color: orangered;
+}
+.categoris-text p{
+  color: gray;
+  font-size: 1.5rem;
+}
+.categoris-content{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+.categ{
+  background: rgb(233, 233, 236, 0.9);
+  text-align: center;
+}
+
+/* cross fit box */
+
+.cross-fit{
+  width: 25%;
+  margin-bottom: 5rem;
+}
+.cross-img{
+  height: 50%;
+  width: 100%;
+}
+.cross-img img{
+  width: 100%;
+  height: 100%;
+}
+.cross-text{
+  margin-top: 4rem;
+}
+.cross-text h2{
+  font-size: 2.7rem;
+  margin-bottom: 4rem;
+}
+.cross-text p{
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+.bo3{
+  padding: 1.3rem 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background: orangered;
+  color: white;
+}
+.bo3:hover{
+  background: none;
+  border: 2px solid orangered;
+  color: black;
+}
+
+/* fitness studio box */
+
+.fitness-studio{
+  margin-top: 3rem;
+  width: 25%;
+  padding-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+.studio-img{
+height: 50%;
+width: 100%;
+}
+.studio-img img{
+  width: 100%;
+  height: 100%;
+}
+.studio-text{
+  margin-top: 5rem;
+}
+.studio-text h2{
+  font-size: 2.7rem;
+  margin-bottom: 4rem;
+}
+.studio-text p{
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+/* yoga classes box */
+
+.yoga-classes{
+  margin-top: 8rem;
+  width: 25%;
+  padding-bottom: 4rem;
+}
+.yoga-img{
+  height: 50%;
+  width: 100%;
+}
+.yoga-img img{
+  width: 100%;
+  height: 100%;
+}
+.yoga-text{
+  margin-top: 5rem;
+}
+.yoga-text h2{
+  font-size: 2.7rem;
+  margin-bottom: 4rem;
+}
+.yoga-text p{
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+/* banner section */
+
+.banner{
+  padding-top: 10rem;
+  background: url(img/image-personal-trainer.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-text{
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  margin-right: 5rem;
+}
+.banner-text h2{
+  font-size: 4.2rem;
+  color: white;
+  text-shadow: black 2rem;
+  margin-bottom: 3rem;
+}
+.banner-text h3{
+  font-size: 6rem;
+  color: white;
+  margin-bottom: 6rem;
+}
+.bo6{
+  margin-right: 3rem;
+  padding: 1.5rem 3rem;
+  background: orangered;
+  border: none;
+  color: white;
+}
+.bo6:hover{
+  box-shadow: 2px 0px 2px 2px orangered;
+}
+
+/* trainers-section */
+/* head */
+.trainers{
+  min-height: 90vh;
+  width: 80%;
+  margin: 0 auto;
+}
+.trainers-text{
+  margin: 3rem 0rem;
+  padding-top: 3rem;
+}
+.trainers-text h1{
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.trainers-text h4{
+  color: gray;
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+/* content */
+.trainers-content{
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.sara-miller,.jack-steve,.big-ramy{
+  max-width: 25%;
+}
+.t2 img{
+  width: 100%;
+  height: 100%;
+}
+.t3 img{
+  width: 100%;
+  height: 100%;
+}
+.sara{
+  height: 100%;
+  width: 95%;
+}
+.trainers-text h2{
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+.trainers-text span{
+  color: orangered;
+}
+.trainers-text h3{
+  color: orangered;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.trainers-text p{
+  color: gray;
+  font-size: 1.7rem;
+  padding: 1rem 2rem;
+  line-height: 3rem;
+}
+
+/* contact-section */
+
+.contact{
+  min-height: 50vh;
+  display: flex;
+}
+.contact-text1{
+width: 50%;
+min-height: 50vh;
+background: url(/img/pexels-binyamin-mellish-116077.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.contact-text1 h2{
+  font-size: 3.3rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px #000000;
+}
+.contact-text1 h3{
+  font-size: 5rem;
+  color: orangered;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px #000000;
+}
+
+.contact-text2{
+width: 50%;
+min-height: 50vh;
+background: linear-gradient(rgba(0,0,0,0.7), transparent),url(/img/pexels-pixabay-416778.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.contact-text2 h2{
+  font-size: 3.2rem;
+  color: white;
+  margin-bottom: 3rem;
+  text-shadow: 2px 2px #000000;
+}
+.contact-text2 h3{
+  font-size: 6rem;
+  color: orangered;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px #000000;
+}
+
+/* footer */
+footer{
+  min-height: 60vh;
+  background: #060A11;
+}
+.footer-container{
+  width: 90%;
+  margin: auto;
+  min-height: 50vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer-social */
+
+.footer-social{
+width: 30%;
+margin-top: 7rem;
+}
+
+.social-text h2{
+  color: orangered;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+.social-text p{
+  color: white;
+  font-size: 2rem;
+  padding-right: 5rem;
+  line-height: 2.5rem;
+  margin-bottom: 6rem;
+}
+.social-icons{
+  display: flex;
+  align-items: center;
+}
+.social-icons h3{
+color: white;
+font-size: 2rem;
+margin-right: 1rem;
+}
+.social-icons img{
+  width: 2.5rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+.social-icons img:hover{
+  transform: translateY(-2px);
+}
+.subscribe{
+  margin-top: 3rem;
+  position: relative;
+  width: 80%;
+}
+.sub-email{
+  padding: 1rem 5rem 1rem 2rem;
+  font-size: 2rem;
+  background: rgb(226, 204, 202);
+  border: none;
+  width: 100%;
+}
+
+.bo7{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: none;
+  font-size: 1.6rem;
+  padding: 0rem 2rem;
+  background: orangered;
+  color: white;
+  cursor: pointer;
+}
+.bo7:hover{
+  box-shadow: 1px 0px 1px 1px orangered;
+}
+
+/* footer-blog */
+
+.footer-blog{
+  width: 30%;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-blog h1{
+  font-size: 3rem;
+  color: white;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+.bl{
+  display: flex;
+}
+.bl:hover{
+  transform: scale(1.1) translateY(-2px);
+}
+.bl p{
+  font-size: 2rem;
+  color: white;
+  padding: 2rem 3rem 2rem 3rem;
+}
+
+/* footer-instagram */
+
+.footer-instagram{
+  margin-top: 6rem;
+  width: 25%;
+  
+}
+.footer-instagram h2{
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+.imgs{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 70%;
+  width: 80%;
+  
+}
+.imgs img{
+  width: 100%;
+  height: 100%;
+  filter: blur(1px);
+}
+.imgs img:hover{
+  filter: blur(0);
+}
+.img3{
+  grid-column: 3/3;
+  grid-row: 1/3;
+  object-fit: cover;
+}
+.img6{
+  grid-column: 1/4;
+}
+
+/* meida querry */
+
+@media screen and (min-width: 1450px){
+  .main-title h2 {
+    margin-left: 5rem;
+  }
+  .main-title p {
+    margin-left: 5rem;
+  }
+  .book-btn {
+    margin-left: 5rem;
+  }
+}
+@media screen and (max-width:1410px){
+  .first-form{
+    width: 100%;
+  }
+  .second-form{
+    width: 100%;
+  }
+  #count,#date,#time{
+    width: 11rem;
+    font-size: 1rem;
+  }
+  #name,#email,#phone{
+    width: 11rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width:1355px){
+  header h1{
+    flex: 1 1 70rem;
+    margin: 0rem 2rem 4rem 2rem;
+    text-align: center;
+    font-size: 4rem;
+  }
+.ulcontainer{
+  flex: 2 2 40rem;
+  margin: 0rem 3rem;
+  justify-content: center;
+  width: 100%;
+}
+.logo-ul{
+margin: 0rem 5rem 0rem 1rem;
+width: 50%;
+}
+.logo-ul a{
+  font-size: 2rem;
+}
+.sign-ol{
+  margin: 0rem 1rem 0rem 5rem;
+  width: 50%;
+}
+.sign{
+  font-size: 2rem;
+}
+/* footer */
+.footer-container{
+  flex-wrap: wrap;
+}
+.footer-social,.footer-blog,.footer-instagram{
+  width: 0%;
+  flex: 2 1 40rem;
+  }
+  .imgs{
+    width: 100%;
+  }
+  .bl{
+    margin: 1rem 0rem;
+  }
+  .footer-blog h1{
+    margin-left: 0;
+  }
+  .footer-instagram{
+    margin: 1rem;
+  }
+}
+@media screen and (max-width:1207px){
+.logo-ul{
+  width: 65%;
+}
+
+/* free div */
+.free-div{
+  width: 70%;
+  min-height: 45vh;
+}
+.free-div img{
+  width: 30%;
+  object-fit: cover;
+}
+.free-text{
+  width: 80%;
+  margin: 3rem 0rem;
+}
+.free-text h2{
+  font-size: 3.5rem;
+}
+.first-form{
+  width: 100%;
+}
+.second-form{
+  width: 100%;
+}
+#count,#date,#time{
+  width: 11rem;
+  font-size: 1rem;
+}
+#name,#email,#phone{
+  width: 11rem;
+}
+/* booking */
+.booking-text{
+  margin-bottom: auto;
+  margin-top: 7rem;
+  margin-left: 10rem;
+  width: 50%;
+}
+.booking-text h2{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.booking-text h3{
+  font-size: 1.5rem;
+  padding-right: 15rem;
+  margin-bottom: 4rem;
+  line-height: 3rem;
+}
+.booking-text p{
+  font-size: 1.5rem;
+  color: gray;
+  margin-bottom: 3rem;
+}
+.in-touch-btn{
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+}
+}
+
+@media screen and (max-width: 1130px){
+
+/* categoris */
+.categoris{
+  width: 90%;
+}
+.cross-fit,.fitness-studio,.yoga-classes{
+  width: 30%;
+}
+}
+
+@media screen and (max-width: 1092px){
+
+/*  */
+.sign{
+  font-size: 1.5rem;
+}
+.logo-ul a{
+  font-size: 1.5rem;
+}
+.logo-ul{
+  width: 70%;
+}
+/* trainers */
+.trainers{
+  width: 90%;
+}
+.trainers-text{
+  margin: 2rem 0rem;
+}
+.trainers-text h2{
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+}
+
+@media screen and (max-width: 935px){
+ 
+     /* main title */
+.main-title h2{
+  font-size: 4rem;
+  text-shadow: 1px 1px 1px black  ;
+  margin-top: 2rem;
+}
+.main-title p{
+  margin: 1rem;
+}
+.book-btn{
+  margin-top: 2rem;
+}
+.main-title {
+  margin-top: 2rem;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+  
+}
+@media screen and (max-width:862px){
+  body{
+    overflow-x: hidden;
+  }
+  header{
+    width: 100%;
+    padding: 3rem 0%;
+  }
+
+.sign{
+  font-size: 1.2rem;
+  font-size: 600;
+}
+.choose-plan{
+  font-size: 1.4rem;
+  padding: 1rem 1.2rem;
+}
+.logo-ul{
+  margin: 0rem 2rem ;
+}
+.logo-ul a{
+  font-size: 1.3rem;
+}
+/* free div */
+.free-div{
+  width: 70%;
+  min-height: 40vh;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%) translateY(15%);
+}
+.free-text h1{
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.free-text h2{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+#count,#date,#time{
+  width: 8rem;
+  font-size: 1rem;
+}
+#name,#email,#phone{
+  width: 9rem;
+}
+.bo2{
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  padding: 1rem 1.8rem;
+}
+/* booking */
+.booking-text{
+  margin-bottom: auto;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  width: 50%;
+}
+.booking-text h2{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.booking-text h3{
+  font-size: 1.3rem;
+  padding-right: 10rem;
+  margin-bottom: 3rem;
+  line-height: 2.3rem;
+}
+.booking-text p{
+  font-size: 1.2rem;
+  color: gray;
+  margin-bottom: 2rem;
+}
+.in-touch-btn{
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+}
+.booking-img img{
+  width: 100%;
+  height: 100%;
+  margin: 1rem;
+  }
+  /* categoris */
+  .cross-img,.studio-img,.yoga-img{
+    height: 45%;
+    width: 100%;
+  }
+  .cross-text,.studio-text,.yoga-text{
+    margin-top: 6rem;
+  }
+  .cross-text h2{
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+  }
+  .studio-text h2{
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+  }
+  .yoga-text h2{
+    font-size: 2.3rem;
+    margin-bottom: 3rem;
+  }
+  .yoga-text p{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .cross-text p{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .studio-text p{
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .bo3{
+    padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    background: orangered;
+    color: white;
+  }
+  /* banner */
+  .banner{
+    min-height: 50vh;
+    
+  }
+  .banner-text h2{
+    font-size: 4rem;
+    color: orangered;
+    text-shadow: 1px 1px 1px  black;
+  }
+  .banner-text h3{
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 4rem;
+  }
+  .bo6{
+    margin: 0;
+    padding: 1.5rem 2rem;
+  }
+  /* contact */
+  .contact-text1 h2{
+    font-size: 2.8rem;
+  }
+  .contact-text1 h3{
+    font-size: 4rem;
+  }
+  .contact-text2 h2{
+    font-size: 2.8rem; 
+  }
+  .contact-text2 h3{
+    font-size: 4rem; 
+  }
+} 
+
+@media screen and (max-width:720px){
+  /* trainers */
+.trainers{
+  width: 90%;
+}
+.trainers-text{
+  margin: 2rem 0rem;
+}
+.trainers-text h2{
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.trainers-text h3{
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+.trainers-text p{
+  color: gray;
+  font-size: 1.5rem;
+  padding: 1rem ;
+  line-height: 2.5rem;
+}
+/* contact */
+.contact{
+  min-height: 40vh;
+}
+.contact-text1,.contact-text2{
+min-height: 40vh;
+}
+.contact-text1 h2{
+  font-size: 2.2rem;
+}
+.contact-text1 h3{
+  font-size: 3rem;
+}
+.contact-text2 h2{
+  font-size: 2.2rem; 
+}
+.contact-text2 h3{
+  font-size: 3rem; 
+}
+.bo6{
+  padding: 1.2rem;
+  font-size: 1.2rem;
+}
+.banner-text h2{
+  font-size: 2.7rem;
+  color: orangered;
+  text-shadow: 1px 1px 1px  black;
+}
+.banner-text h3{
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 4rem;
+}
+}
+
+@media screen and (max-width:699px){
+ .ulcontainer{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   width: 100%;
+   justify-items: center;
+   align-content: center;
+   min-height: 10vh;
+   margin: auto;
+ }
+ header h1{
+  display: none;
+  }
+  .ulcontainer h1{
+     display: inline-block;
+     font-size: 2rem;
+     grid-column: 2/3;
+     margin-top: 3rem;
+     width: 100%;
+     margin: auto;
+     font-size: 2.5rem;
+     height: 1rem;
+   }
+   .logo-ul{
+     grid-column: 1/2;
+     flex-direction: column;
+     width: 100%;
+     margin: auto;
+     height: 15rem;
+     margin-top: 2rem;
+   }
+   .logo-ul a{
+     margin: 2rem 0rem;
+     font-size: 1.5rem;
+   }
+   .sign-ol{
+     grid-column: 3/3;
+     flex-direction: column;
+     width: 100%;
+     margin: auto;
+     height: 10rem;
+   }
+   .sign{
+    font-size: 1.5rem;
+    
+   }
+
+/* free div */
+.free-div{
+  width: 80%;
+  min-height: 40vh;
+}
+/* booking */
+.booking{
+  padding-top: 23rem;
+}
+ .booking-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.booking-text{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.booking-text h3{
+  padding: 0rem 2rem;
+}
+.in-touch-btn{
+  margin-bottom: 6rem;
+}
+.booking-img{
+  width: 90%;
+  margin: auto;
+}
+.booking-img img{
+  margin: 0;
+}
+}
+@media screen and (max-width:592px){
+  .main-title {
+    min-height: 20vh;
+  }
+
+  .main-title h2 {
+    font-size: 3rem;
+  }
+  .main-title span { 
+    margin-bottom: 2rem;
+  }
+  .main-title p {
+    font-size: 1.7rem;
+  }
+  .book-btn {
+    margin-bottom: 2rem;
+  }
+  /* free div */
+.free-div{
+  width: 95%;
+  min-height: 40vh;
+}
+#count,#date,#time{
+  width: 9rem;
+  font-size: 1rem;
+}
+#name,#email,#phone{
+  width: 9rem;
+  font-size: 1rem;
+}
+/* categoris */
+.categoris-text h2{
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.cross-img,.studio-img,.yoga-img{
+  height: 37%;
+  width: 100%;
+}
+.cross-text,.studio-text,.yoga-text{
+  margin-top: 5rem;
+}
+.cross-text h2{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.studio-text h2{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.yoga-text h2{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.yoga-text p{
+  padding: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 70%;
+}
+.cross-text p{
+  padding: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 70%;
+}
+.studio-text p{
+  padding: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 70%;
+}
+.bo3{
+  padding: 1rem 1.1rem ;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background: orangered;
+  color: white;
+}
+/* banner */
+.banner{
+  display: none;
+}
+}
+
+@media screen and (max-width: 513px){
+
+  #count,#date,#time{
+    width: 8rem;
+  }
+  #name,#email,#phone{
+    width: 8rem;
+  }
+}
+
+@media screen and (max-width:463px){
+
+#count,#date,#time{
+  width: 7rem;
+}
+#name,#email,#phone{
+  width: 7rem;
+  
+}
+.free-text h1{
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+.free-text h2{
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+.bo2{
+  padding: 0.7rem 1.3rem;
+  margin-top: 0.2rem;
+}
+/* categoris */
+.categoris-content{
+  flex-wrap: wrap;
+}
+.cross-img,.studio-img,.yoga-img{
+  height: 50%;
+  width: 100%;
+}
+.cross-text,.studio-text,.yoga-text{
+  margin-top: 4rem;
+}
+.cross-text h2{
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+.studio-text h2{
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+.yoga-text h2{
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+}
+.cross-text p{
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+.studio-text p{
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+.yoga-text p{
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+.categ{
+  margin: 1rem;
+  
+  height: 50rem;
+  flex: 1 1 30rem;
+}
+
+.bo3{
+  padding: 1rem  ;
+  font-size: 1rem;
+  font-weight: 500;
+  background: orangered;
+  color: white;
+}
+/* trainers */
+
+.trainers-text h1{
+  font-size: 2.7rem;
+  margin-bottom: 1.5rem;
+}
+.trainers-text h4{
+  color: gray;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+/* contact */
+.contact{
+  min-height: 30vh;
+}
+.contact-text1,.contact-text2{
+min-height: 30vh;
+}
+.contact-text1 h2{
+  font-size: 1.7rem;
+  margin-bottom: 1.2rem;
+}
+.contact-text1 h3{
+  font-size: 2.3rem;
+}
+.contact-text2 h2{
+  font-size: 2rem; 
+  margin-bottom: 1.2rem;
+}
+.contact-text2 h3{
+  font-size: 2.3rem; 
+}
+.bo6{
+  padding: 1rem;
+  font-size: 1rem;
+}
+/* footer */
+.social-text p{
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+.social-icons h3{
+  font-size: 1.7rem;
+}
+.social-icons img{
+  width: 2rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+.subscribe{
+  width: 85%;
+}
+}
+@media screen and (max-width:398px){
+  .main-title h2 {
+    font-size: 3rem;
+  }
+  .main-title span { 
+    margin-bottom: 1.5rem;
+  }
+  .main-title p {
+    font-size: 1.3rem;
+  }
+ 
+
+  #count,#date,#time{
+    width: 5rem;
+    font-size: 1rem;
+  }
+  #name,#email,#phone{
+    width: 5rem;
+    font-size: 1rem;
+  }
+  .bo3{
+    padding: 1rem  0.6rem;
+    font-size: 0.9rem;
+  }
+  /* footer */
+  .social-text h2{
+    margin-bottom: 3rem;
+  }
+.social-text p{
+  font-size: 1.6rem;
+  margin-bottom: 4rem;
+}
+.social-icons h3{
+  font-size: 1.5rem;
+}
+.social-icons img{
+  width: 1.9rem;
+  margin-left: 1.2rem;
+}
+.subscribe{
+  width: 90%;
+}
+.bl p{
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+}
+@media screen and (max-width:350px){
+
+  .studio-text p{
+    
+    font-size: 1.5rem;
+    
+  }
+  .yoga-text p{
+    font-size: 1.5rem;
+    
+  }
+  .cross-text p{
+    
+    font-size: 1.5rem;
+    
+  }
+  
+
+  /* contact */
+.contact-text1 h2{
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.contact-text1 h3{
+  font-size: 2rem;
+}
+.contact-text2 h2{
+  font-size: 1.7rem; 
+  margin-bottom: 1.2rem;
+}
+.contact-text2 h3{
+  font-size: 2rem; 
+}
+.free-div{
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(30%);
+}
+
+}
+
+@media screen and (max-width:330px){
+ /* contact */
+
+.contact-text1 h2{
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+}
+.contact-text1 h3{
+  
+  margin-bottom: 0.7rem;
+}
+.contact-text2 h2{
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+}
+.contact-text2 h3{
+  font-size: 2rem; 
+  margin-bottom: 0.7rem;
+}
+}
