@@ -3,30 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/style.css" />
     <title>Fitness</title>
   </head>
   <body>
     <section class="hero">
       <header>
-        <h1>FITNE<span>SS</span></h1>
+        <h1 id="logo">FITNE<span>SS</span></h1>
         <div class="ulcontainer">
-          <h1>FITNE<span>SS</span></h1>
-        <ul class="logo-ul">
-          <li><a href="#">Home</a></li>
-          <li><a href="#booking">About US</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#trainers">Trainers</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#blog">Blog</a></li>
-        </ul>
-        <ol class="sign-ol">
-          <li><a href="" class="sign">SIGN IN</a></li>
-          <li><a href="" class="sign">SIGN UP</a></li>
-          <li><a href="" class="choose-plan">Choose Plan</a></li>
-        </ol>
-      </div>
+          <ul class="logo-ul">
+            <h1>FITNE<span>SS</span></h1>
+            <li><a href="#">Home</a></li>
+            <li><a href="#booking">About US</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+          <ol class="sign-ol">
+            <li><a href="" class="sign">SIGN IN</a></li>
+            <li><a href="" class="sign">SIGN UP</a></li>
+            <li><a href="" class="choose-plan">Choose Plan</a></li>
+          </ol>
+        </div>
+        <img class="burger" src="img/icon-hamburger.svg" alt="" />
       </header>
       <img class="hero-img" src="/img/banner.jpg" alt="girl doing push ups" />
       <div class="main-title">
@@ -42,31 +48,46 @@
           <form class="booking-form">
             <div class="first-form">
               <div class="select">
-              <select name="count" id="count">
-                <option value="one">One Person</option>
-                <option value="two">Two Persons</option>
-              </select>
-              <i class="fas fa-chevron-down"></i>
+                <select name="count" id="count">
+                  <option value="one">One Person</option>
+                  <option value="two">Two Persons</option>
+                </select>
+                <i class="fas fa-chevron-down"></i>
               </div>
               <div class="date-ic">
-              <input type="date" name="date" id="date" />
-              <i class="far fa-calendar-alt"></i>
-            </div>
-            <div class="time-ic">
-              <input type="time" name="time" id="time" />
-              <i class="far fa-clock"></i>
-            </div>
+                <input type="date" name="date" id="date" />
+                <i class="far fa-calendar-alt"></i>
+              </div>
+              <div class="time-ic">
+                <input type="time" name="time" id="time" />
+                <i class="far fa-clock"></i>
+              </div>
             </div>
             <div class="second-form">
               <div class="name-ic">
-              <input placeholder="Your Name ..." type="text" name="name" id="name" />
-            </div>
-            <div class="email-ic">
-              <input placeholder="Email ..." type="email" name="email" id="email" />
-            </div>
-            <div class="phone-ic">
-              <input placeholder="Phone ..." type="text" name="phone" id="phone" />
-            </div>
+                <input
+                  placeholder="Your Name ..."
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+              </div>
+              <div class="email-ic">
+                <input
+                  placeholder="Email ..."
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div class="phone-ic">
+                <input
+                  placeholder="Phone ..."
+                  type="text"
+                  name="phone"
+                  id="phone"
+                />
+              </div>
             </div>
           </form>
           <button class="bo2" type="submit">Book Now</button>
@@ -76,49 +97,68 @@
     <section class="booking" id="booking">
       <div class="booking-container">
         <div class="booking-text">
-          <h2>WELCOME TO <br><span>FITNESS</span></h2>
-          <h3>Lorem ipsum, dolor sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, repudiandae? ipsum dolor sit, amet consectetur adipisicing.</h3>
-          <p>Lorem ipsum dolor sit amet onsectetur adipisicing Lorem ipsum dolor sit amet.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, tenetur.</p>
+          <h2>WELCOME TO <br /><span>FITNESS</span></h2>
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Recusandae,
+            repudiandae? ipsum dolor sit, amet consectetur adipisicing.
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet onsectetur adipisicing Lorem ipsum dolor
+            sit amet.<br />Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Accusantium, tenetur.
+          </p>
           <button class="in-touch-btn">Get In Touch</button>
         </div>
         <div class="booking-img">
-          <img src="/img/image2.png" alt="fitness girl jumping">
+          <img src="/img/image2.png" alt="fitness girl jumping" />
         </div>
       </div>
     </section>
     <section class="categoris" id="programs">
       <div class="categoris-text">
         <h2>WELCOME TO <span>FITNESS</span></h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, et.</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, et.
+        </p>
       </div>
       <div class="categoris-content">
         <div class="cross-fit categ">
           <div class="cross-img">
-            <img src="/img/image-category2.jpg" alt="girl jugging">
+            <img src="/img/image-category2.jpg" alt="girl jugging" />
           </div>
           <div class="cross-text">
             <h2>Basic Crossfit</h2>
-            <p>Our staff includes amazing professionals that have an eye for crossfit.</p>
+            <p>
+              Our staff includes amazing professionals that have an eye for
+              crossfit.
+            </p>
             <button class="in-touch-btn bo3">Get In Touch</button>
           </div>
         </div>
         <div class="fitness-studio categ">
           <div class="studio-img">
-            <img src="/img/image-category1 1.jpg" alt="girl lefting weight">
+            <img src="/img/image-category1 1.jpg" alt="girl lefting weight" />
           </div>
           <div class="studio-text">
             <h2>Fitness Studio</h2>
-            <p>Work out in fitness groups or with a personal certified trainer in our gym center.</p>
+            <p>
+              Work out in fitness groups or with a personal certified trainer in
+              our gym center.
+            </p>
             <button class="in-touch-btn bo3">Get In Touch</button>
           </div>
         </div>
         <div class="yoga-classes categ">
           <div class="yoga-img">
-            <img src="/img/image-category3.jpg" alt="girl doing yoga">
+            <img src="/img/image-category3.jpg" alt="girl doing yoga" />
           </div>
           <div class="yoga-text">
             <h2>Yoga Classes</h2>
-            <p>What do you think about yoga? If you have a passion for it,  we’ve got a special program. </p>
+            <p>
+              What do you think about yoga? If you have a passion for it, we’ve
+              got a special program.
+            </p>
             <button class="in-touch-btn bo3">Get In Touch</button>
           </div>
         </div>
@@ -134,37 +174,52 @@
     <section class="trainers" id="trainers">
       <div class="trainers-text">
         <h1>EXPERT <span>TRAINERS</span></h1>
-        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, et.</h4>
+        <h4>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, et.
+        </h4>
       </div>
       <div class="trainers-content">
         <div class="sara-miller">
           <div class="trainers-img t1">
-            <img class="sara" src="/img/image-trainer-1.png" alt="sara miller trainer">
+            <img
+              class="sara"
+              src="/img/image-trainer-1.png"
+              alt="sara miller trainer"
+            />
           </div>
           <div class="trainers-text">
             <h2>Sarra Miller</h2>
-        <h3>Spinning Trainer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat!</p>
+            <h3>Spinning Trainer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+              quaerat!
+            </p>
           </div>
         </div>
         <div class="jack-steve">
           <div class="trainers-img t2">
-            <img src="/img/image-trainer-2.png" alt="jack steve trainer">
+            <img src="/img/image-trainer-2.png" alt="jack steve trainer" />
           </div>
           <div class="trainers-text">
             <h2>Jack Steve</h2>
-        <h3>Bootcamp Trainer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat!</p>
+            <h3>Bootcamp Trainer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+              quaerat!
+            </p>
           </div>
         </div>
         <div class="big-ramy">
           <div class="trainers-img t3">
-            <img src="/img/image-trainer-3.png" alt="big ramy trainer">
+            <img src="/img/image-trainer-3.png" alt="big ramy trainer" />
           </div>
           <div class="trainers-text">
             <h2>Big Ramy</h2>
-        <h3>Weights Trainer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat!</p>
+            <h3>Weights Trainer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+              quaerat!
+            </p>
           </div>
         </div>
       </div>
@@ -181,55 +236,101 @@
         <button class="in-touch-btn bo6">Get In Touch</button>
       </div>
     </section>
+
     <footer id="blog">
-      <div class="footer-container">
-      <div class="footer-social">
-          <div class="social-text">
-            <h2>Fitness</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo labore corporis possimus nihil saepe debitis distinctio aliquid error repellendus, laudantium reiciendis eum quas nisi facere. Ad hic temporibus illum quisquam?</p>
-          </div>
-          <div class="social-icons" >
-            <h3>Follow Us: </h3>
-            <img src="/img/instagram 1.svg" alt="instagram">
-            <img src="/img/twitter 1.svg" alt="twitter">
-            <img src="/img/youtube-symbol 1.svg" alt="youtube">
-            <img src="/img/iconmonstr-facebook-4.svg" alt="facebook">
-            <img src="/img/iconmonstr-dribbble-1.svg" alt="dribble">
-            <img src="/img/iconmonstr-whatsapp-1.svg" alt="whatsup">         
-          </div>
-          <div class="subscribe">
-            <input placeholder="Your Email ..." type="email" name="email" class="sub-email">
-            <button class="bo7">Subscribe</button>
-          </div>
+      <div class="footer-social foot">
+        <div class="social-text">
+          <h2>Fitness</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            labore corporis possimus nihil saepe debitis distinctio aliquid
+            error repellendus, laudantium reiciendis eum quas nisi facere. Ad
+            hic temporibus illum quisquam?
+          </p>
+        </div>
+        <div class="social-icons">
+          <h3>Follow Us:</h3>
+          <img src="/img/instagram 1.svg" alt="instagram" />
+          <img src="/img/twitter 1.svg" alt="twitter" />
+          <img src="/img/youtube-symbol 1.svg" alt="youtube" />
+          <img src="/img/iconmonstr-facebook-4.svg" alt="facebook" />
+          <img src="/img/iconmonstr-dribbble-1.svg" alt="dribble" />
+          <img src="/img/iconmonstr-whatsapp-1.svg" alt="whatsup" />
+        </div>
+        <div class="subscribe">
+          <input
+            placeholder="Your Email ..."
+            type="email"
+            name="email"
+            class="sub-email"
+          />
+          <button class="bo7">Subscribe</button>
+        </div>
       </div>
-      <div class="footer-blog">
-          <h1>Blogs</h1>
+      <div class="footer-blog foot">
+        <h1>Blogs</h1>
         <div class="blog1 bl">
-          <img src="/img/blogs1.jpg" alt="chandaler">
-          <p>This is a blog about fitness Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+          <img src="/img/blogs1.jpg" alt="chandaler" />
+          <p>
+            This is a blog about fitness Lorem ipsum dolor sit, amet consectetur
+            adipisicing.
+          </p>
         </div>
         <div class="blog2 bl">
-          <img src="/img/blogs2.jpg" alt="wave">
-          <p>This is a blog about fitness Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+          <img src="/img/blogs2.jpg" alt="wave" />
+          <p>
+            This is a blog about fitness Lorem ipsum dolor sit, amet consectetur
+            adipisicing.
+          </p>
         </div>
         <div class="blog3 bl">
-          <img src="/img/blogs3.jpg" alt="kid with guitar">
-          <p>This is a blog about fitness Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+          <img src="/img/blogs3.jpg" alt="kid with guitar" />
+          <p>
+            This is a blog about fitness Lorem ipsum dolor sit, amet consectetur
+            adipisicing.
+          </p>
         </div>
       </div>
-      <div class="footer-instagram">
+      <div class="footer-instagram foot">
         <h2>Instagram</h2>
         <div class="imgs">
-        <img class="img1" src="img/image-category1 1.jpg" alt="">
-        <img  class="img2" src="img/image-category2.jpg" alt="">
-        <img  class="img3" src="img/image-category3.jpg" alt="">
-        <img  class="img4" src="img/pexels-binyamin-mellish-116077.jpg" alt="">
-        <img  class="img5" src="img/pexels-pixabay-416778.jpg" alt="">
-        <img  class="img6" src="img/banner.jpg" alt="">
+          <img class="img1" src="img/image-category1 1.jpg" alt="" />
+          <img class="img2" src="img/image-category2.jpg" alt="" />
+          <img class="img3" src="img/image-category3.jpg" alt="" />
+          <img
+            class="img4"
+            src="img/pexels-binyamin-mellish-116077.jpg"
+            alt=""
+          />
+          <img class="img5" src="img/pexels-pixabay-416778.jpg" alt="" />
+          <img class="img6" src="img/banner.jpg" alt="" />
+        </div>
       </div>
-      </div>
-    </div>
     </footer>
 
+    <div class="nav-bar">
+      <div class="bar-logo">
+        <a href="/">FITNESS</a>
+        <img class="close" src="/img/icon-close.svg" alt="" />
+      </div>
+
+      <div class="bar-container">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#booking">About US</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+        <ol>
+          <li><a href="#">SIGN IN</a></li>
+          <li><a href="#">SIGN UP</a></li>
+          <li><a href="#">Choose Plan</a></li>
+        </ol>
+      </div>
+    </div>
+
+    <script src="/app.js"></script>
   </body>
 </html>
